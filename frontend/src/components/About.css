@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.abt_container {
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: 120px; */
+    margin-left: 100px;
+    min-height: 80vh;
+}
+
+.abt_container .abt_cards {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+    margin: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.abt_container .abt_cards .img-bx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.abt_container .abt_cards:hover .img-bx {
+    transform: translateY(30px) scale(0.5);
+}
+
+.abt_container .abt_cards .img-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.abt_container .abt_cards .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.abt_container .abt_cards:hover .content {
+    transform: translateY(0);
+}
+
+.abt_container .abt_cards .content .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.abt_container .abt_cards .content .details h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.abt_container .abt_cards .content .details h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #03a9f4;
+}
+
+.abt_container .abt_cards .content .details .social_icons {
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+
+.abt_container .abt_cards .content .details .social_icons li {
+    list-style: none;
+    margin: 4px;
+}
+
+.abt_container .abt_cards .content .details .social_icons li .social_links {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294869;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.abt_container .abt_cards .content .details .social_icons li .social_links:hover {
+    transform: rotate(360deg);
+    background: #03a9f4;
+}
